@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>منوی دیجیتال کافه تریام</title>
     <link rel="icon" href="Resources/images/logo.jpeg" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Resources/stylesheets/main.css" />
   </head>
-  <body class="font-vazir box-border">
+  <body class="relative font-vazir box-border h-screen">
     <!-- naviagtion bar -->
     <header
       class="w-full h-16 flex justify-between items-center bg-black px-4 py-10"
@@ -23,9 +27,47 @@
     <main>
       <!-- under Header Section -->
       <section
-        class="w-full h-60 md:h-96 bg-[url('../images/top-section.jpg')] bg-center bg-cover"
-      ></section>
+        class="w-full h-60 flex flex-col gap-y-4 items-center justify-center relative md:h-96 bg-[url('../images/top-section.jpg')] bg-center bg-cover"
+      >
+        <div class="absolute w-full h-full bg-[#0000006c]"></div>
+        <h1 class="text-white text-3xl font-bold relative">منو قهوه تریام</h1>
+        <h3 class="text-orange-500 text-xl relative">
+          .در تمام شعبات سرو میگردد.
+        </h3>
+        <!-- icons -->
+        <div class="relative text-white flex gap-2">
+          <i
+            class="bx bxl-linkedin-square bx-sm cursor-pointer bg-orange-500 p-1 rounded-full transition-all duration-300 hover:bg-slate-400"
+          ></i>
+          <i
+            class="bx bxl-instagram-alt bx-sm cursor-pointer bg-orange-500 p-1 rounded-full transition-all duration-300 hover:bg-slate-400"
+          ></i>
+        </div>
+      </section>
+      <div class="test h-screen"></div>
     </main>
+    <footer>
+      <!-- mobile icons navigation -->
+      <ul
+        class="md:hidden fixed bottom-0 w-full flex justify-around text-2xl bg-gray-50 p-2 ring-1 ring-gray-200 shadow-sm  shadow-black"
+      >
+        <li>
+          <a href="#"><i class="bx bx-user"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="bx bx-cart-alt"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="bx bx-store-alt"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="bx bxs-store-alt"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="bx bx-home-alt"></i></a>
+        </li>
+      </ul>
+    </footer>
   </body>
   <script src="./Resources/scripts/app.js" type="module"></script>
 </html>
