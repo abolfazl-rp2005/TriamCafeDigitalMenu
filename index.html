@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
   <body class="relative font-vazir box-border h-screen">
     <!-- naviagtion bar -->
     <header
-      class="w-full h-16 flex justify-between items-center bg-black px-4 py-10"
+      class="sticky top-0 z-[1000] w-full h-16 flex justify-between items-center bg-black px-4 py-10"
     >
       <a href="#" class=""
         ><img
@@ -22,7 +22,18 @@
           alt="triam cafe logo"
           class="h-16 rounded-full"
       /></a>
-      <box-icon name="menu" size="md" color="white"></box-icon>
+      <i class="bx bx-menu bx-md text-white cursor-pointer lg:hidden"id="menu-bar"></i>
+      <nav class="hidden absolute z-[1001] top-0 right-0 flex flex-col items-center w-full h-screen bg-zinc-900 sm:w-3/5 lg:hidden"id="mobile-nav-wrapper">
+        <i class='bx bx-x bx-md absolute text-orange-500 left-4 top-4 cursor-pointer' id="close-element"></i>
+        <img src="./Resources/images/logo.jpeg" alt="logo" width="100" class="rounded-full">
+        <ul class="w-full p-8" id="mobile-navbar">
+          <li><a href=""><i class='bx bx-store'></i> فروشگاه اینترنتی تریام</a></li>
+          <li><a href=""><i class='bx bx-building' ></i> شعبه های کافه تریام</a></li>
+          <li><a href=""><i class='bx bx-info-square' ></i> درباره ی ما</a></li>
+          <li><a href=""><i class='bx bxs-contact' ></i> ارتباط با ما</a></li>
+          <li><a href=""><i class='bx bxl-blogger' ></i> بلاگ مقالات</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!-- under Header Section -->
@@ -49,9 +60,10 @@
     <footer>
       <!-- mobile icons navigation -->
       <ul
-        class="md:hidden fixed bottom-0 w-full flex justify-around text-2xl bg-gray-50 p-2 ring-1 ring-gray-200 shadow-sm  shadow-black"
+        class="md:hidden fixed bottom-0 w-full flex justify-around text-2xl bg-gray-50 p-2 ring-1 ring-gray-200 shadow-sm shadow-black"
       >
         <li>
+          
           <a href="#"><i class="bx bx-user"></i></a>
         </li>
         <li>

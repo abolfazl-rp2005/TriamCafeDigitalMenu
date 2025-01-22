@@ -8,3 +8,23 @@
     url("../Fonts/Vazir.woff") format("woff"),
     url("../Fonts/Vazir.woff2") format("woff2");
 }
+@layer base {
+  #mobile-nav-wrapper {
+    animation: slide-inout 0.5s ease-in;
+  }
+  #mobile-navbar > li {
+    @apply my-3 text-white transition-all duration-100;
+
+    &:hover {
+      @apply text-gray-300;
+    }
+  }
+}
+@keyframes slide-inout {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
