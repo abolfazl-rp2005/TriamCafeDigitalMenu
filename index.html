@@ -22,16 +22,40 @@
           alt="triam cafe logo"
           class="h-16 rounded-full"
       /></a>
-      <i class="bx bx-menu bx-md text-white cursor-pointer lg:hidden"id="menu-bar"></i>
-      <nav class="hidden absolute z-[1001] top-0 right-0 flex flex-col items-center w-full h-screen bg-zinc-900 sm:w-3/5 lg:hidden"id="mobile-nav-wrapper">
-        <i class='bx bx-x bx-md absolute text-orange-500 left-4 top-4 cursor-pointer' id="close-element"></i>
-        <img src="./Resources/images/logo.jpeg" alt="logo" width="100" class="rounded-full">
+      <i
+        class="bx bx-menu bx-md text-white cursor-pointer lg:hidden"
+        id="menu-bar"
+      ></i>
+      <nav
+        class="hidden absolute z-[1001] top-0 right-0 flex flex-col items-center w-full h-screen bg-zinc-900 sm:w-3/5 lg:hidden"
+        id="mobile-nav-wrapper"
+      >
+        <i
+          class="bx bx-x bx-md absolute text-orange-500 left-4 top-4 cursor-pointer"
+          id="close-element"
+        ></i>
+        <img
+          src="./Resources/images/logo.jpeg"
+          alt="logo"
+          width="100"
+          class="rounded-full"
+        />
         <ul class="w-full p-8" id="mobile-navbar">
-          <li><a href=""><i class='bx bx-store'></i> فروشگاه اینترنتی تریام</a></li>
-          <li><a href=""><i class='bx bx-building' ></i> شعبه های کافه تریام</a></li>
-          <li><a href=""><i class='bx bx-info-square' ></i> درباره ی ما</a></li>
-          <li><a href=""><i class='bx bxs-contact' ></i> ارتباط با ما</a></li>
-          <li><a href=""><i class='bx bxl-blogger' ></i> بلاگ مقالات</a></li>
+          <li>
+            <a href=""><i class="bx bx-store"></i> فروشگاه اینترنتی تریام</a>
+          </li>
+          <li>
+            <a href=""><i class="bx bx-building"></i> شعبه های کافه تریام</a>
+          </li>
+          <li>
+            <a href=""><i class="bx bx-info-square"></i> درباره ی ما</a>
+          </li>
+          <li>
+            <a href=""><i class="bx bxs-contact"></i> ارتباط با ما</a>
+          </li>
+          <li>
+            <a href=""><i class="bx bxl-blogger"></i> بلاگ مقالات</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -57,29 +81,50 @@
       </section>
       <div class="test h-screen"></div>
     </main>
-    <footer>
-      <!-- mobile icons navigation -->
-      <ul
-        class="md:hidden fixed bottom-0 w-full flex justify-around text-2xl bg-gray-50 p-2 ring-1 ring-gray-200 shadow-sm shadow-black"
-      >
-        <li>
-          
-          <a href="#"><i class="bx bx-user"></i></a>
-        </li>
-        <li>
-          <a href=""><i class="bx bx-cart-alt"></i></a>
-        </li>
-        <li>
-          <a href=""><i class="bx bx-store-alt"></i></a>
-        </li>
-        <li>
-          <a href=""><i class="bx bxs-store-alt"></i></a>
-        </li>
-        <li>
-          <a href=""><i class="bx bx-home-alt"></i></a>
-        </li>
-      </ul>
+    <footer class="bg-gray-950">
+      <img
+        src="Resources/images/logo.jpeg"
+        alt="logo"
+        width="80"
+        class="mx-auto rounded-full p-2"
+      />
+      <!-- footer container -->
+      <div class="grid grid-rows-1 grid-cols-2 p-4">
+        <ul id="js-ul-fast-access" class="text-xs">
+          <h4 class="text-white text-lg py-1">دسترسی سریع</h4>
+        </ul>
+        <ul id="js-ul-menu" class="text-xs">
+          <h4 class="text-white text-lg py-1">منوی قهوه تریام</h4>
+        </ul>
+        <ul>
+          <h4 class="text-white text-lg py-1">مجوز های قهوه تریام</h4>
+        </ul>
+      </div>
+      <hr class="bg-gray-500 w-full h-[1px]" />
+      <p class="text-white text-sm py-2">
+        © تمامی حقوق این وبسایت برای قهوه تریام محفوظ می‌باشد.
+      </p>
     </footer>
+    <!-- mobile icons navigation -->
+    <ul
+      class="md:hidden sticky bottom-0 w-full flex justify-around text-2xl bg-gray-50 p-2 ring-1 ring-gray-200 shadow-sm shadow-black"
+    >
+      <li>
+        <a href="#"><i class="bx bx-user"></i></a>
+      </li>
+      <li>
+        <a href=""><i class="bx bx-cart-alt"></i></a>
+      </li>
+      <li>
+        <a href=""><i class="bx bx-store-alt"></i></a>
+      </li>
+      <li>
+        <a href=""><i class="bx bxs-store-alt"></i></a>
+      </li>
+      <li>
+        <a href=""><i class="bx bx-home-alt"></i></a>
+      </li>
+    </ul>
   </body>
   <script src="./Resources/scripts/app.js" type="module"></script>
 </html>
